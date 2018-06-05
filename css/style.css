@@ -4,15 +4,41 @@
 }
 
 /*=== Common CSS ===*/
-
-.bottom-15{
-margin-bottom: 15px;
+a{
+    text-decoration: none!important;
 }
-
+.bottom-15{
+    margin-bottom: 15px;
+}
+.box_shadow{
+    -webkit-box-shadow: 0 2px 14px 1px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0 2px 14px 1px rgba(0, 0, 0, 0.08);
+    -ms-box-shadow: 0 2px 14px 1px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 14px 1px rgba(0, 0, 0, 0.08);    
+}
+.border_radius{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+.padding_10{
+    padding: 10px;
+    box-sizing: border-box;
+}
+.top-10{
+    margin-top: 8px;
+}
+.margin_0{
+    margin: 0px!important;
+}
+.bottom-0{
+    margin-bottom: 0px!important;
+}
 /*=== login CSS ===*/
 
 .login-bg{
-background-color: #273044;
+    background-color: #1b2845;
 }
 
 .login_wrap {
@@ -34,4 +60,60 @@ button.btn.btn-default.custom-btn,button.btn.btn-default.custom-btn:focus,button
 .btn-min{
     min-width: 100px;
     min-height: 40px;
+}
+
+/*--DashBoard Page Design--*/
+.top_section{
+    padding: 5px 0px;
+}
+.top_section .logo{
+    max-width: 160px;
+    width: 100%;
+}
+.top_section .list-inline-item{
+    vertical-align: middle;
+}
+.user{
+    top: -5px;
+    position: relative;
+}
+
+.fixed-footer{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 10px 0px;
+}
+.main{
+    padding: 20px 0px;
+}
+.no_list_type{
+    list-style-type: none;
+    padding: 5px 0px;
+}
+.left_section ul li a{
+display: block;
+padding: 10px 15px;
+box-sizing: border-box;
+border-bottom: 1px solid #eee;
+}
+.min_height {
+    min-height: 77vh;
+}
+.dataTables_length{
+    display: inline-block;
+}
+.dataTables_filter{
+    float: right;
+}
+.dataTables_filter input {
+    box-shadow: none!important;
+    border: 1px solid #ddd;
+    min-height: 31px;
+    border-radius: 3px;
+}
+table#subscriber tr td, table#subscriber tr th {
+    padding: 8px;
+    border: 0px;
 }
