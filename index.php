@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Hello, world!</title>
 
+<?php
+  $con = null;
 
+?>
   <!--Line Icon Include -->
   
   <link rel="stylesheet" type="text/css" href="assets/line-awesome/css/line-awesome.min.css">
