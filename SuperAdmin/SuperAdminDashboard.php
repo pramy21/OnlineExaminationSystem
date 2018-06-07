@@ -9,16 +9,16 @@
 
 	<!--Line Icon Include -->
 
-	<link rel="stylesheet" type="text/css" href="assets/line-awesome/css/line-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/line-awesome/css/line-awesome.min.css">
 
 	<!-- Bootstrap core CSS -->
-	<link href="assets/bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../assets/bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet">
 	
 	<!-- Data Table CSS -->
 
-	<link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/dataTables.bootstrap4.min.css" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 
 </head>
 <body>
@@ -30,7 +30,7 @@
 						<div class="col-xs-12 col-sm-12">
 							<div class="pull-left">
 								<a href="./">
-									<img src="assets/images/logo.png" class="img-fluid logo">
+									<img src="../assets/images/logo.png" class="img-fluid logo">
 								</a>	
 							</div>
 							<div class="pull-right top-10">
@@ -140,11 +140,11 @@
 
 	<!-- JavaScript Library Include -->
 
-	<script type="text/javascript" src="js/jQuery.min.js"></script>
-	<script type="text/javascript" src="js/proper.js"></script>
-	<script type="text/javascript" src="assets/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/dataTable.min.js"></script>
-	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="../js/jQuery.min.js"></script>
+	<script type="text/javascript" src="../js/proper.js"></script>
+	<script type="text/javascript" src="../assets/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/dataTable.min.js"></script>
+	<script type="text/javascript" src="../js/custom.js"></script>
 </body>
 
 </html>
