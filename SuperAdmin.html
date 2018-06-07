@@ -17,39 +17,34 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
-<body>
-
-<form action="" id="sa_login">
-    <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+<body class="login-bg">
+<div class="login_wrap">
+  <form action="/">
+    <div class="imgcontainer text-center">
+      <img src="assets/images/logo.png" alt="Avatar" class="img-fluid">
     </div>
 
     <div class="container">
+     <div class="bottom-15">
       <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
+      <input type="text" placeholder="Enter Username" name="uname" class="form-control" required>
+    </div>
+    <div class="bottom-15">
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
+      <input type="password" placeholder="Enter Password" name="psw" class="form-control" required>
     </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
+    <div class="text-right">
+      <button type="submit" class="btn btn-default btn-primary custom-btn btn-min">Login</button>
     </div>
-  </form>
+  </div>
+</form>
+</div>
+<!-- JavaScript Library Include -->
 
+<script type="text/javascript" src="js/jQuery.min.js"></script>
 
-  <!-- JavaScript Library Include -->
-
-  <script type="text/javascript" src="js/jQuery.min.js"></script>
-
-  <script type="text/javascript" src="assets/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="assets/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 
 </body>
 </html>
