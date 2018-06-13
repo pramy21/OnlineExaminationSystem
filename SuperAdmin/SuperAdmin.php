@@ -31,7 +31,7 @@
                 </div>
                 <div class="bottom-15">
                     <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="pWd" class="form-control" required>
+                    <input type="password" placeholder="Enter Password" name="pwd" class="form-control" required>
                 </div>
                 <div class="text-right">
                     <button type="submit" class="btn btn-default btn-primary custom-btn btn-min">Login</button>

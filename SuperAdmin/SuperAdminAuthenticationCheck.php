@@ -7,18 +7,22 @@
         if($_SERVER["REQUEST_METHOD"] == "POST") 
         {
             // username and password sent from form             
-            $superAdminUserName = mysqli_real_escape_string($db,$_POST['uname']);
-            $mypassword = mysqli_real_escape_string($db,$_POST['pwd']);             
-            // $result = mysqli_query($connection,"CALL SuperAdminAuthentication") or die("Query fail: " . mysqli_error());       
-            // //loop the result set
-            // while ($row = mysqli_fetch_array($result))
-            // {   
-            //     echo $row[0] . " - " . + $row[1]; 
-            // }
-            
-            if(true) { //if($count == 1) {
-            //    session_register("SuperAdminUserName");
-            //    $_SESSION['Super_Admin_User_Name'] = $superAdminUserName;               
+            $superAdminUserName = $_POST['uname'];
+            $mypassword = $_POST['pwd'];       
+            $sqlCommand = "CALL SuperAdminAuthentication('" . $superAdminUserName . "','" . $mypassword ."')";
+            $result = mysqli_query($connection, $sqlCommand) or die("Query fail: " . mysqli_error($connection));       
+            //loop the result set
+            $authentication = false;
+            while ($row = mysqli_fetch_array($result))
+            {   
+                if($row["AUTHENTICATION"] == "1")
+                {
+                    $authentication = true;
+                }
+            }            
+            if($authentication) { 
+                //session_register("SuperAdminUserName");
+                $_SESSION['Super_Admin_User_Name'] = $superAdminUserName;               
                header("location: SuperAdminDashboard.php");
             } else {
                $error = "Your Login Name or Password is invalid";
